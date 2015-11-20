@@ -1,0 +1,4 @@
+# This should be in .env
+SLACK_TOKEN_ENTROLL=token
+SLACK_TOKEN_DETROLL=token
+

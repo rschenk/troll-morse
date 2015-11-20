@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require_relative './lib/morse'
+
+loop do
+  begin
+    puts Morse.to_troll_morse($stdin.readline().strip), ''
+  rescue Interrupt
+    exit
+  end
+end
