@@ -24,8 +24,10 @@ post '/' do
   case command
   when '/detroll'
     Morse.from_troll_morse(text)
-  else
+  when '/entroll'
     Morse.to_troll_morse(text)
+  else
+    ':troll: Trololololo :troll:'
   end
 end
 
