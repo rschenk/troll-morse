@@ -1,8 +1,9 @@
+require 'bundler/setup'
 require 'sinatra'
 require 'dotenv'
 require_relative './lib/morse'
 
-Dotenv.load
+Dotenv.load rescue nil
 SLACK_TOKENS = [
   ENV['SLACK_TOKEN_ENTROLL'],
   ENV['SLACK_TOKEN_DETROLL']
